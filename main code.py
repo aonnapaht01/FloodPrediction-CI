@@ -257,7 +257,7 @@ def run_cross_validation_and_flood_model():
     learning_rates = [0.01]
     momentum = 0.9
     epochs = 5000
-    k_folds = 30
+    k_folds = 10
 
     for lr in learning_rates:
         true_labels, pred_labels = cross_validation_cross_pat(cross_data_normalized, cross_labels, k_folds, lr, momentum, epochs)
